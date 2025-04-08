@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Titulo-->
     <title>Vivero Organico</title>
+    <link rel="stylesheet" href="styles/estilos.css">
 </head>
 <body>
     <header>
@@ -21,26 +22,66 @@
         </div>
         <div>
             <!--Nombre del negocio en cabecera-->
-            <h1>VIVERO ORGANICO DARIO HIDALGO</h1>
+            <h1 class="name-web">VIVERO ORGANICO DARIO HIDALGO</h1>
         </div>
     </header>
 
-    <!--Se planea colocar un carrusel de fotos en la pantalla principal-->
-    <div id="carrusel">
-        <main id="principal">
-            <h3>(Las imagenes de carrusel van aquí)</h3>
-            <img src="imagen/1.jpg" alt="Planta1" width="100px" height="100px">
-            <img src="imagen/2.jpg" alt="Planta2" width="100px" height="100px">
-        </main>
-    </div>
-    <!--Sección de productos más comprados (referencial)-->
-    <h2>Productos más comprados</h2>
-    <div>
-        <h3>Planta 1</h3>
-        <img src="imagen/1.jpg" alt="Planta1" width="100px" height="100px">
-        <h3>Planta 2</h3>
-        <img src="imagen/2.jpg" alt="Planta2" width="100px" height="100px">
-    </div>
-    
+    <section>
+        <!--Inicio Carrusel-->
+        <section>
+            <div id="carrusel">
+                <main id="principal"> <!--Princpal-->
+                    <h3>(Las imagenes de carrusel van aquí)</h3>
+                    <img src="imagen/1.jpg" alt="Planta1" width="100px" height="100px">
+                    <img src="imagen/2.jpeg" alt="Planta2" width="100px" height="100px">
+                    <img src="imagen/3.jpeg" alt="Planta2" width="100px" height="100px">
+                    <img src="imagen/4.jpeg" alt="Planta2" width="100px" height="100px">
+                </main>
+            </div>
+        </section>
+        
+        <section class="acerca_de"> 
+            <h3 class="titulo">Nuestro vivero</h3> 
+            <p>Vivero Daro es un espacio donde la naturaleza crece de forma sana y consciente. Nos dedicamos a la producción y venta de plantas 100% orgánicas: ornamentales, frutales, medicinales y nativas. Trabajamos sin pesticidas ni químicos sintéticos, cuidando tanto la salud del ecosistema como la de quienes eligen cultivar con nosotros. Nuestro compromiso es ofrecerte vida verde, pura y sostenible.</p>
+            <p>Ubicado en un entorno natural y tranquilo, Vivero Daro es más que un vivero: es un refugio para quienes buscan conectar con la tierra. Aquí encontrarás asesoría personalizada, talleres y productos pensados para jardineros de todos los niveles, siempre con el enfoque de la agricultura orgánica y regenerativa.</p>
+            <p>Creemos en el poder transformador de las plantas y en la importancia de cuidar cada raíz que sembramos. Por eso, en Vivero Daro cultivamos con amor, respeto por la naturaleza y una visión a largo plazo: que cada jardín, huerto o maceta sea un pequeño paso hacia un mundo más verde y sano.</p>
+        </section>
+
+        <section class="popular"> <!--Inicio Sección de productos populares-->
+            <div class="contenedor">
+                <h2 class="titulo">Productos más comprados</h2> <!--Titulo productos populares-->
+                <div>
+                    <article> <!--Seccion plantas populares-->
+                        <h3 class="categorias">Plantas medicinales</h3>
+                        <div class="planta">
+                            <p class="nombre_planta">Aloe vera</p>
+                            <p class="precio_planta">$4.5</p>
+                            <p class="descripcion_planta">Ideal para quemaduras, cuidado de la piel y digestión.</p>
+                            <img class="imagen_planta" src="imagen/1.jpg" alt="Aloe Vera" width="100px" height="100px">
+                        </div>
+                        <div class="planta">
+                            <p class="nombre_planta">Menta</p>
+                            <p class="precio_planta">$3.00</p>
+                            <p class="descripcion_planta">Refrescante y digestiva, perfecta para infusiones.</p>
+                            <img class="imagen_planta" src="imagen/2.jpeg" alt="Menta" width="100px" height="100px">
+                        </div>
+                        <div class="planta">
+                            <p class="nombre_planta">Lavanda</p>
+                            <p class="precio_planta">$5.00</p>
+                            <p class="descripcion_planta">Relajante natural, excelente para el sueño y la ansiedad.</p>
+                            <img class="imagen_planta" src="imagen/3.jpeg" alt="Lavanda" width="100px" height="100px">
+                        </div>
+                        <div class="planta">
+                            <p class="nombre_planta">Romero</p>
+                            <p class="precio_planta">$4.00</p>
+                            <p class="descripcion_planta">Estimula la circulación, memoria y el crecimiento del cabello.</p>
+                            <img class="imagen_planta" src="imagen/4.jpeg" alt="Romero" width="100px" height="100px">
+                        </div>
+
+                    </article>
+                </div>
+            </div>
+        </section>
+    </section>
 </body>
 </html>

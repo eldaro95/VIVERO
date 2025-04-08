@@ -1,0 +1,47 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+}
+
+.contenedor{
+    width:100%;
+    background-color: rgb(229, 255, 205);
+    max-width: 1000px;
+    margin:auto; /*Margen automatico para centrar el contenedor*/
+    overflow:hidden /*Ocultamos desbordamiento contenedor*/
+}
+
+header{
+    background: url('../imagen/bg.webp');
+    text-align: right;
+    position:relative;
+    height: 100px;
+    background-size:cover;
+    background-attachment: fixed; /*Atributo para que la imagen de fondo en header no se mueva*/
+    background-position:center;
+}
+
+.name-web{
+    color: rgb(0, 0, 0);
+    font-style: italic;
+}
+
+nav{
+    background-color: beige;
+}
+
+#carrusel{
+    text-align: center;            
+    margin: 1%;                  /* Margen del 1% al div carrusel*/
+    border: 2px solid #000;     /* Borde de 2px negro */
+    border-radius: 15px;        /* Bordes redondeados */
+    padding: 20px;              /* Espacio interior opcional */
+}
+
