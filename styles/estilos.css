@@ -3,45 +3,142 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
 }
 
-body{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size:16px;
 }
 
 .contenedor{
     width:100%;
-    background-color: rgb(229, 255, 205);
-    max-width: 1000px;
     margin:auto; /*Margen automatico para centrar el contenedor*/
-    overflow:hidden /*Ocultamos desbordamiento contenedor*/
+    overflow:hidden; /*Ocultamos desbordamiento contenedor*/
+    max-width: 1000px;
 }
 
 header{
-    background: url('../imagen/bg.webp');
+    background:url('../imagen/bg.jpg') seagreen;
     text-align: right;
     position:relative;
-    height: 100px;
+    height: 400px;
     background-size:cover;
     background-attachment: fixed; /*Atributo para que la imagen de fondo en header no se mueva*/
-    background-position:center;
+    background-position:top;
+}
+
+header nav{
+    padding:30px;
+}
+
+header nav a{
+    color:white;
+    text-decoration: none;
+    padding:20px;
+}
+
+header a:hover{
+    text-decoration: none;
+    color:aqua;
 }
 
 .name-web{
-    color: rgb(0, 0, 0);
-    font-style: italic;
+    color: black;
+    text-align: left;
+    padding: 20px;
+    position:absolute;
+    top:50%;
+    margin-top:-60px;
 }
 
-nav{
-    background-color: beige;
+header h1 span{
+    padding:10px;
+    font-family: 'Ghotic',sans-serif;
+    font-weight: 300;
+    border: 2px dashed black;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.65);
 }
 
-#carrusel{
+.carrusel{
     text-align: center;            
     margin: 1%;                  /* Margen del 1% al div carrusel*/
-    border: 2px solid #000;     /* Borde de 2px negro */
+    border: 2px solid #000;    /* Borde de 2px negro */
     border-radius: 15px;        /* Bordes redondeados */
-    padding: 20px;              /* Espacio interior opcional */
 }
 
+.carrusel img {
+    width: 25%;
+    float:left;
+    max-height: 200px;
+}
+
+section{
+    padding:20px;
+}
+
+section .acerca_de{
+    border: 1px solid gray;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.45);
+}
+
+section .popular{
+    margin-top:30px;
+    border: 1px solid gray;
+}
+
+.planta{
+    width:50%;
+    text-align:left;
+    margin-top:30px;
+    margin-bottom:30px;
+    float:left;
+    padding:2%;
+}
+
+.nombre_planta{
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid gray;
+    margin-right: 10px;
+    border-right: 1px solid gray;
+}
+
+.nombre_planta:hover{
+    color:blue
+}
+
+.precio_planta{
+    font-weight: 700;
+    font-size: 15px;
+    font-style: italic;
+    color:rgb(45, 82, 9);
+}
+
+.descripcion_planta{
+    font-weight: 200;
+    font-size: 20px;
+    font-style: italic;
+    margin-top:25px;
+}
+
+.planta img{
+    margin-top:10px;
+    box-shadow: 0px,0px,2px,rgba(0,0,0,0.33);
+    border:2px solid black;
+}
+
+.titulo{
+    margin-bottom: 10px;
+    border-bottom: 1px solid gray;
+    
+}
+
+.categorias{
+    font-weight: 500;
+    font-style: italic;
+}
