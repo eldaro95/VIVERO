@@ -1,144 +1,141 @@
-
 *{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing:border-box;
-    box-sizing: border-box;
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina rellenos por defecto */
+    box-sizing: border-box; /* Incluye padding y borde dentro del ancho/alto */
+    -webkit-box-sizing: border-box; /* Compatibilidad con WebKit (Safari/Chrome antiguos) */
+    -moz-box-sizing: border-box; /* Compatibilidad con Firefox antiguos */
+    box-sizing: border-box; /* Repetido por seguridad */
 }
 
-
 body{
-    font-family: 'Montserrat', sans-serif;
-    font-size:16px;
+    font-family: 'Montserrat', sans-serif; /* Fuente principal */
+    font-size: 16px; /* Tamaño base del texto */
 }
 
 .contenedor{
-    width:100%;
-    margin:auto; /*Margen automatico para centrar el contenedor*/
-    overflow:hidden; /*Ocultamos desbordamiento contenedor*/
-    max-width: 1000px;
+    width: 100%; /* Ancho completo del contenedor */
+    margin: auto; /* Centrado horizontal automático */
+    overflow: hidden; /* Oculta contenido que se desborde */
+    max-width: 1000px; /* Ancho máximo de 1000px */
 }
 
 header{
-    background:url('../imagen/bg.jpg') seagreen;
-    text-align: right;
-    position:relative;
-    height: 400px;
-    background-size:cover;
-    background-attachment: fixed; /*Atributo para que la imagen de fondo en header no se mueva*/
-    background-position:top;
+    background: url('../imagen/bg.jpg') seagreen; /* Imagen de fondo + color de respaldo */
+    text-align: right; /* Texto alineado a la derecha */
+    position: relative; /* Posicionamiento relativo para hijos con position:absolute */
+    height: 400px; /* Altura fija */
+    background-size: cover; /* Imagen de fondo cubre todo el contenedor */
+    background-attachment: fixed; /* Fondo fijo al hacer scroll */
+    background-position: top; /* Imagen alineada arriba */
 }
 
 header nav{
-    padding:30px;
+    padding: 30px; /* Espaciado interno del menú */
 }
 
 header nav a{
-    color:white;
-    text-decoration: none;
-    padding:20px;
+    color: white; /* Texto blanco */
+    text-decoration: none; /* Sin subrayado */
+    padding: 20px; /* Espaciado alrededor del enlace */
 }
 
 header a:hover{
-    text-decoration: none;
-    color:aqua;
+    text-decoration: none; /* Sigue sin subrayado al pasar el mouse */
+    color: aqua; /* Cambia color a aqua al pasar el mouse */
 }
 
 .name-web{
-    color: black;
-    text-align: left;
-    padding: 20px;
-    position:absolute;
-    top:50%;
-    margin-top:-60px;
+    color: black; /* Texto negro */
+    text-align: left; /* Alineado a la izquierda */
+    padding: 20px; /* Espacio interno */
+    position: absolute; /* Posicionamiento absoluto dentro del header */
+    top: 50%; /* Mitad vertical */
+    margin-top: -60px; /* Corrección para centrar verticalmente */
 }
 
 header h1 span{
-    padding:10px;
-    font-family: 'Ghotic',sans-serif;
-    font-weight: 300;
-    border: 2px dashed black;
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.65);
+    padding: 10px; /* Espaciado interno */
+    font-family: 'Ghotic', sans-serif; /* Fuente secundaria */
+    font-weight: 300; /* Grosor de fuente ligero */
+    border: 2px dashed black; /* Borde punteado negro */
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.65); /* Sombra */
 }
 
 .carrusel{
-    text-align: center;            
-    margin: 1%;                  /* Margen del 1% al div carrusel*/
-    border: 2px solid #000;    /* Borde de 2px negro */
-    border-radius: 15px;        /* Bordes redondeados */
+    text-align: center; /* Centra el contenido */
+    margin: 1%; /* Margen exterior */
+    border: 2px solid #000; /* Borde negro */
+    border-radius: 15px; /* Bordes redondeados */
 }
 
 .carrusel img {
-    width: 25%;
-    float:left;
-    max-height: 200px;
+    width: 25%; /* Imagen ocupa 25% del ancho */
+    float: left; /* Se alinean horizontalmente */
+    max-height: 200px; /* Altura máxima de 200px */
 }
 
 section{
-    padding:20px;
+    padding: 20px; /* Espacio interno */
 }
 
 section .acerca_de{
-    border: 1px solid gray;
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.45);
+    border: 1px solid gray; /* Borde gris */
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.45); /* Sombra */
 }
 
 section .popular{
-    margin-top:30px;
-    border: 1px solid gray;
+    margin-top: 30px; /* Espacio arriba */
+    border: 1px solid gray; /* Borde gris */
 }
 
 .planta{
-    width:50%;
-    text-align:left;
-    margin-top:30px;
-    margin-bottom:30px;
-    float:left;
-    padding:2%;
+    width: 50%; /* Mitad del ancho disponible */
+    text-align: left; /* Alineación a la izquierda */
+    margin-top: 30px; /* Espacio superior */
+    margin-bottom: 30px; /* Espacio inferior */
+    float: left; /* Permite que se alineen al lado */
+    padding: 2%; /* Espaciado interno */
 }
 
 .nombre_planta{
-    font-weight: 500;
-    font-size: 25px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid gray;
-    margin-right: 10px;
-    border-right: 1px solid gray;
+    font-weight: 500; /* Peso medio */
+    font-size: 25px; /* Tamaño grande */
+    margin-bottom: 10px; /* Espacio debajo */
+    border-bottom: 1px solid gray; /* Línea inferior gris */
+    margin-right: 10px; /* Espacio a la derecha */
+    border-right: 1px solid gray; /* Línea a la derecha */
 }
 
 .nombre_planta:hover{
-    color:blue
+    color: blue; /* Cambia color a azul al pasar el mouse */
 }
 
 .precio_planta{
-    font-weight: 700;
-    font-size: 15px;
-    font-style: italic;
-    color:rgb(45, 82, 9);
+    font-weight: 700; /* Texto en negrita */
+    font-size: 15px; /* Tamaño moderado */
+    font-style: italic; /* En cursiva */
+    color: rgb(45, 82, 9); /* Verde oscuro */
 }
 
 .descripcion_planta{
-    font-weight: 200;
-    font-size: 20px;
-    font-style: italic;
-    margin-top:25px;
+    font-weight: 200; /* Muy delgado */
+    font-size: 20px; /* Tamaño mediano/grande */
+    font-style: italic; /* En cursiva */
+    margin-top: 25px; /* Espacio superior */
 }
 
 .planta img{
-    margin-top:10px;
-    box-shadow: 0px,0px,2px,rgba(0,0,0,0.33);
-    border:2px solid black;
+    margin-top: 10px; /* Espacio superior */
+    box-shadow: 0px, 0px, 2px, rgba(0,0,0,0.33); /* Sombra sutil (hay un error con las comas acá) */
+    border: 2px solid black; /* Borde negro */
 }
 
 .titulo{
-    margin-bottom: 10px;
-    border-bottom: 1px solid gray;
-    
+    margin-bottom: 10px; /* Espacio debajo */
+    border-bottom: 1px solid gray; /* Línea inferior */
 }
 
 .categorias{
-    font-weight: 500;
-    font-style: italic;
+    font-weight: 500; /* Peso medio */
+    font-style: italic; /* En cursiva */
 }
