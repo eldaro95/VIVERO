@@ -131,7 +131,7 @@ section .popular{
 }
 
 .titulo{
-    margin-bottom: 10px; /* Espacio debajo */
+    margin-bottom: 80px; /* Espacio debajo */
     border-bottom: 1px solid gray; /* Línea inferior */
 }
 
